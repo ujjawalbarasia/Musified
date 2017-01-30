@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:orderInCategory="1"
+        android:title="Search"
+        android:icon="@drawable/search_icon"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/action_bluetooth"
+        android:icon="@drawable/bt_icon"
+        android:orderInCategory="2"
+        android:title="Bluetooth"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_end"
+        android:icon="@drawable/cross_icon_new"
+        android:orderInCategory="3"
+        android:title="End"
+        app:showAsAction="always" />
+</menu>

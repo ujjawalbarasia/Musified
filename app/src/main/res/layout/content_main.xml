@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.musified.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <MediaController
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaController"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#c8030303"
+        android:visibility="visible" />
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="12dp">
+
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/repeat_not"
+        android:id="@+id/repeat_button"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll"
+            android:paddingLeft="56dp"
+            android:paddingRight="56dp">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/seekBar" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume Control"
+            android:layout_below="@+id/seekBar"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:id="@+id/volText" />
+        </LinearLayout>
+
+        <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/shuffle_not"
+        android:id="@+id/shuffle_button"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+            android:layout_alignRight="@+id/ll"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

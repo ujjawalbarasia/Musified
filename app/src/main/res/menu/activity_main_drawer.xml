@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:enabled="true">
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/fav_icon"
+            android:title="Favourites" />
+
+        <item
+            android:id="@+id/nav_acc"
+            android:icon="@drawable/acc_icon"
+            android:title="Sense Shake"/>
+
+        <item
+            android:id="@+id/nav_pro"
+            android:icon="@drawable/pro_icon"
+            android:title="Flip Play"/>
+
+        <item
+            android:id="@+id/nav_flash"
+            android:icon="@drawable/flash_icon"
+            android:title="Party Mode"/>
+
+        <item
+            android:id="@+id/nav_youtube"
+            android:icon="@drawable/youtube_icon"
+            android:title="Youtubified" />
+    </group>
+
+
+
+</menu>
